@@ -100,7 +100,7 @@ class Lightbox implements EntityInterface, \JsonSerializable {
     return $lightbox;
   }
 
-  public function jsonSerialize() {
+  public function jsonSerialize(): mixed {
     return [
       'id' => $this->id,
       'type' => 'lightbox',

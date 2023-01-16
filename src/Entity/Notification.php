@@ -73,7 +73,7 @@ class Notification implements EntityInterface, \JsonSerializable {
     return $notification;
   }
 
-  public function jsonSerialize() {
+  public function jsonSerialize(): mixed {
     return [
       'id' => $this->id,
       'type' => 'notification',
