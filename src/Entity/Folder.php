@@ -150,7 +150,7 @@ class Folder implements EntityInterface, \JsonSerializable {
     return $folder;
   }
 
-  public function jsonSerialize() {
+  public function jsonSerialize(): mixed {
     $properties = [
       'id' => $this->id,
       'type' => 'folder',
