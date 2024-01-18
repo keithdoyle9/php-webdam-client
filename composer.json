@@ -27,5 +27,16 @@
     "psr-4": {
       "cweagans\\webdam\\tests\\": "tests"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.packagist.org",
+      "options": {
+        "ssl": {
+          "verify_peer": false
+        }
+      }
+    }
+  ]
 }
